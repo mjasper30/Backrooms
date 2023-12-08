@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/play_backround"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="pause"
+        android:id="@+id/on_sound"
+        android:visibility="visible"
+        android:background="@drawable/on_sound" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="play"
+        android:id="@+id/off_sound"
+        android:visibility="gone"
+        android:background="@drawable/off_sound" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="159dp"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/backrooms_title" />
+
+    <ImageView
+        android:layout_width="250sp"
+        android:layout_height="150sp"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/character" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000"
+        android:fontFamily="@font/zero"
+        android:layout_marginBottom="80dp"
+        android:onClick="startGame"
+        android:text="Play"
+        android:padding="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="52sp" />
+</LinearLayout>
